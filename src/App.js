@@ -20,10 +20,10 @@ function App() {
   return (
     <div className='App-header'>
       <div className='mt-6'>
-      <TodoInput addList={addList} />
       {/* <TodoList /> */}
-      <h1 className='mt-6 text-2xl font-medium'>TODO</h1>
-      <hr className='border-b-1  w-96 '/>
+      <h1 className='mt-6 text-2xl font-medium text-center'>TODO LIST</h1>
+      {/* <hr className='border-b-1  w-96 '/> */}
+      <TodoInput addList={addList} />
       {listTodo.map((listIteam,i)=>{
         return(
           <TodoList key={i} index={i} item = {listIteam} deleteItem ={deleteListItem}/>
